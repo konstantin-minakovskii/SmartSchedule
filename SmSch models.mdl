@@ -83,21 +83,92 @@
 		quid       	"580E4B6B006D"
 		stereotype 	"Actor")
 	    (object UseCase "Выбрать язык"
-		quid       	"580E4B800145")
+		quid       	"580E4B800145"
+		documentation 	
+|Краткое описание: Вариант использования "Выбрать язык" позволяет пользователю изменить язык интерфейса.
+|Предусловие: Пользователь находится в разделе Settings.
+|Основной поток: 
+|1. Нажать на выпадающее меню выбора языка.
+|2. Выбрать язык из предложенных.
+|3. Сохранить язык, нажатием на кнопку языка.
+|Постусловие: Смена языка интерфейса приложения.
+		)
 	    (object UseCase "Скачать необходимое расписание"
-		quid       	"580E6422023E")
+		quid       	"580E6422023E"
+		documentation 	
+|Краткое описание: Вариант использования "Скачать необходимое расписание" позволяет пользователю скачать необходимое расписание, оторые можно будет в дальнейшем отобраать.
+|Предусловие: Пользователь находится в главном экране.
+|Основной поток: 
+|1.Нажать на кнопку Add Schedule
+|2. Ввести номер требуемой группы или фамилию преподавателя.
+|3. Скачать подходящее из предложенных расписаний.
+|Постусловие: Добавление нового расписания в список доступных расписаний для выбора.
+		)
 	    (object UseCase "Просмотреть текущее расписание"
-		quid       	"580E64360349")
+		quid       	"580E64360349"
+		documentation 	
+|Краткое описание: Вариант использования "Просмотреть текущее расписание" позволяет пользователюпросмотреть расписание на главном экране, которое установлено как текущее.
+|Предусловие: Пользователь находится вне программы или не на главном экране.
+|Основной поток: 
+|1. Запустить приожение.
+|Альтернативный поток:
+|1. Перейти на главный экран.
+|Постусловие: Отображение текущего расписания
+		)
 	    (object UseCase "Выбрать расписание для просмотра"
-		quid       	"580E64510188")
+		quid       	"580E64510188"
+		documentation 	
+|Краткое описание: Вариант использования "Выбрать расписание для просмотра" позволяет пользователю выбрать расписание, которое будет отображаться на главном экране.
+|Предусловие: Пользователь перешел в Menu screen.
+|Основной поток: 
+|1. Выбрать из списка номер группы или фамилию и инициалы преподавателя расписание которых он хочет отображать на главном экране..
+|2. Нажать на кнопку с номером или фамилией.
+|Постусловие: Отображение выбранного расписания на главном экране.
+		)
 	    (object UseCase "Установить количество лабораторных часов для предмета"
-		quid       	"580E64640198")
+		quid       	"580E64640198"
+		documentation 	
+|Краткое описание: Вариант использования "Установить количество лабораторных часов для предмета" позволяет пользователю установить количество лабораторных работа для выбранного предмета, на основании которых оно будет определять крайние сроки выполнения лабораторных работ.
+|Предусловие: Пользователь, выбрав предмет, к которому он хочет написать текст уведомления, находится в Reminder screen
+|Основной поток: 
+|1. Выбрать поле для установки количства часов лабортаорных работ.
+|2. Установить количество часов.
+|3. Сохранить количесвто часов.
+|Постусловие: Отображения количества лабораторных часов в полея для установки количства часов.
+		)
 	    (object UseCase "Установить текст напоминания"
-		quid       	"580E64AA00BE")
+		quid       	"580E64AA00BE"
+		documentation 	
+|Краткое описание: Вариант использования "Установить текст напоминания" позволяет пользователю написать текст уведомления, которое будет отображаться перед крайним сроком сдачи лабораторной работы.
+|Предусловие: Пользователь, выбрав предмет, к которому он хочет написать текст уведомления, находится в Reminder screen
+|Основной поток: 
+|1. Выбрать область для уведомления.
+|2. Ввести текст уведомления.
+|3. Сохранить уведомление.
+|Постусловие: Отображение текста уведомления в поле для уведомления
+		)
 	    (object UseCase "Написать заметку о предмете"
-		quid       	"580E64B80002")
+		quid       	"580E64B80002"
+		documentation 	
+|Краткое описание: Вариант использования "Написать заметку о предмете" позволяет пользователю создать описание или специфическую заметку о данном предмете.
+|Предусловие: Пользователь, выбрав предмет, к которому он хочет написать заметку, находится в Reminder screen
+|Основной поток: 
+|1. Выбрать область для заметок.
+|2. Ввести текст заметки.
+|3. Сохранить заметку.
+|Постусловие: Отображение текста заметки в поле для заметки.
+		)
 	    (object UseCase "Выбрать вариант отображения элементов расписания"
-		quid       	"580E64CE02C6")
+		quid       	"580E64CE02C6"
+		documentation 	
+|Краткое описание: Вариант использования "Выбрать вариант отображения элементов расписания " позволяет пользователю изменить вариант отображения элементов расписания. Например, изменить цвет отображения различных типов занятий.
+|Предусловие: Пользователь находится в разделе Settings.
+|Основной поток: 
+|1. Нажать на выпадающее меню выбора вариантов отображения.
+|2. Выбрать вариант из предложенных.
+|3. Сохранить вариант нажатием на кнопку варианта.
+|Постусловие: Смена варианта отображения элементов расписания.
+		)
 	    (object Association "$UNNAMED$0"
 		quid       	"580E65570200"
 		roles      	(list role_list
@@ -198,11 +269,11 @@
 	    (object UseCaseDiagram "Main"
 		quid       	"580E4AC503B0"
 		title      	"Main"
-		zoom       	100
+		zoom       	85
 		max_height 	28350
 		max_width  	21600
-		origin_x   	0
-		origin_y   	0
+		origin_x   	235
+		origin_y   	177
 		items      	(list diagram_item_list
 		    (object UseCaseView "Use Case View::Выбрать вариант отображения элементов расписания" @1
 			location   	(2371, 400)
@@ -230,7 +301,7 @@
 			quidu      	"580E64CE02C6"
 			height     	118)
 		    (object UseCaseView "Use Case View::Скачать необходимое расписание" @2
-			location   	(2659, 675)
+			location   	(2718, 668)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -243,7 +314,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@2
-			    location   	(2659, 813)
+			    location   	(2718, 806)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -255,7 +326,7 @@
 			quidu      	"580E6422023E"
 			height     	118)
 		    (object UseCaseView "Use Case View::Установить количество лабораторных часов для предмета" @3
-			location   	(2646, 1040)
+			location   	(2708, 1048)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -268,7 +339,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@3
-			    location   	(2646, 1178)
+			    location   	(2708, 1186)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	707
@@ -280,7 +351,7 @@
 			quidu      	"580E64640198"
 			height     	118)
 		    (object UseCaseView "Use Case View::Выбрать язык" @4
-			location   	(1743, 409)
+			location   	(1741, 441)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -293,7 +364,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@4
-			    location   	(1743, 547)
+			    location   	(1741, 579)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -305,7 +376,7 @@
 			quidu      	"580E4B800145"
 			height     	118)
 		    (object UseCaseView "Use Case View::Просмотреть текущее расписание" @5
-			location   	(1375, 575)
+			location   	(1202, 669)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -318,7 +389,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@5
-			    location   	(1375, 713)
+			    location   	(1202, 807)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -330,7 +401,7 @@
 			quidu      	"580E64360349"
 			height     	118)
 		    (object UseCaseView "Use Case View::Выбрать расписание для просмотра" @6
-			location   	(1296, 1003)
+			location   	(1219, 1107)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -343,7 +414,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@6
-			    location   	(1296, 1141)
+			    location   	(1219, 1245)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -355,7 +426,7 @@
 			quidu      	"580E64510188"
 			height     	118)
 		    (object UseCaseView "Use Case View::Написать заметку о предмете" @7
-			location   	(2257, 1384)
+			location   	(2331, 1463)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -368,7 +439,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@7
-			    location   	(2257, 1522)
+			    location   	(2331, 1601)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -380,7 +451,7 @@
 			quidu      	"580E64B80002"
 			height     	118)
 		    (object UseCaseView "Use Case View::Установить текст напоминания" @8
-			location   	(1628, 1365)
+			location   	(1623, 1467)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -393,7 +464,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@8
-			    location   	(1628, 1503)
+			    location   	(1623, 1605)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -424,7 +495,7 @@
 			    location   	(1968, 1066)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	331
+			    max_width  	325
 			    justify    	0
 			    label      	"Пользователь")
 			icon       	"Actor"
@@ -434,7 +505,7 @@
 			annotation 	8
 			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$0" @10
-			location   	(2123, 709)
+			location   	(2121, 711)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -451,30 +522,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$1" @11
 				Parent_View 	@10
-				location   	(155, -197)
+				location   	(153, -195)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E6558028C"
 				client     	@10
 				supplier   	@1
 				vertices   	(list Points
-				    (2123, 709)
-				    (2221, 589))
+				    (2121, 711)
+				    (2218, 593))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$2" @12
 				Parent_View 	@10
-				location   	(155, -197)
+				location   	(153, -195)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E6558028E"
 				client     	@10
 				supplier   	@9
 				vertices   	(list Points
-				    (2123, 709)
+				    (2121, 711)
 				    (2025, 830))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$3" @13
-			location   	(2177, 833)
+			location   	(2248, 813)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -491,30 +562,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$4" @14
 				Parent_View 	@13
-				location   	(209, -73)
+				location   	(280, -93)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E656900DC"
 				client     	@13
 				supplier   	@2
 				vertices   	(list Points
-				    (2177, 833)
-				    (2330, 783))
+				    (2248, 813)
+				    (2472, 743))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$5" @15
 				Parent_View 	@13
-				location   	(209, -73)
+				location   	(280, -93)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E656900DE"
 				client     	@13
 				supplier   	@9
 				vertices   	(list Points
-				    (2177, 833)
+				    (2248, 813)
 				    (2025, 883))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$6" @16
-			location   	(2280, 964)
+			location   	(2310, 969)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -531,30 +602,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$7" @17
 				Parent_View 	@16
-				location   	(312, 58)
+				location   	(342, 63)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E656C00A8"
 				client     	@16
 				supplier   	@3
 				vertices   	(list Points
-				    (2280, 964)
-				    (2536, 1015))
+				    (2310, 969)
+				    (2596, 1024))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$8" @18
 				Parent_View 	@16
-				location   	(312, 58)
+				location   	(342, 63)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E656C00AA"
 				client     	@16
 				supplier   	@9
 				vertices   	(list Points
-				    (2280, 964)
-				    (2025, 914))
+				    (2310, 969)
+				    (2025, 915))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$9" @19
-			location   	(1872, 698)
+			location   	(1874, 715)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -571,30 +642,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$10" @20
 				Parent_View 	@19
-				location   	(-96, -208)
+				location   	(-94, -191)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E65770054"
 				client     	@19
 				supplier   	@4
 				vertices   	(list Points
-				    (1872, 698)
-				    (1814, 572))
+				    (1874, 715)
+				    (1821, 606))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$11" @21
 				Parent_View 	@19
-				location   	(-96, -208)
+				location   	(-94, -191)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E65770056"
 				client     	@19
 				supplier   	@9
 				vertices   	(list Points
-				    (1872, 698)
-				    (1930, 824))
+				    (1874, 715)
+				    (1927, 825))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$12" @22
-			location   	(1789, 804)
+			location   	(1675, 812)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -611,30 +682,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$13" @23
 				Parent_View 	@22
-				location   	(-179, -102)
+				location   	(-293, -94)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E65790308"
 				client     	@22
 				supplier   	@5
 				vertices   	(list Points
-				    (1789, 804)
-				    (1669, 738))
+				    (1675, 812)
+				    (1442, 741))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$14" @24
 				Parent_View 	@22
-				location   	(-179, -102)
+				location   	(-293, -94)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E6579030A"
 				client     	@22
 				supplier   	@9
 				vertices   	(list Points
-				    (1789, 804)
-				    (1909, 871))
+				    (1675, 812)
+				    (1908, 883))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$15" @25
-			location   	(1656, 948)
+			location   	(1618, 997)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -651,30 +722,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$16" @26
 				Parent_View 	@25
-				location   	(-312, 42)
+				location   	(-350, 91)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E657C0173"
 				client     	@25
 				supplier   	@6
 				vertices   	(list Points
-				    (1656, 948)
-				    (1404, 985))
+				    (1618, 997)
+				    (1327, 1075))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$17" @27
 				Parent_View 	@25
-				location   	(-312, 42)
+				location   	(-350, 91)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E657C0175"
 				client     	@25
 				supplier   	@9
 				vertices   	(list Points
-				    (1656, 948)
-				    (1908, 912))
+				    (1618, 997)
+				    (1909, 919))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$18" @28
-			location   	(2137, 1188)
+			location   	(2172, 1221)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -691,30 +762,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$19" @29
 				Parent_View 	@28
-				location   	(169, 282)
+				location   	(204, 315)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E658102B4"
 				client     	@28
 				supplier   	@7
 				vertices   	(list Points
-				    (2137, 1188)
-				    (2220, 1326))
+				    (2172, 1221)
+				    (2290, 1404))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$20" @30
 				Parent_View 	@28
-				location   	(169, 282)
+				location   	(204, 315)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E658102B6"
 				client     	@28
 				supplier   	@9
 				vertices   	(list Points
-				    (2137, 1188)
-				    (2054, 1050))
+				    (2172, 1221)
+				    (2054, 1038))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$21" @31
-			location   	(1773, 1166)
+			location   	(1755, 1250)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -731,27 +802,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$22" @32
 				Parent_View 	@31
-				location   	(-195, 260)
+				location   	(-213, 344)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E658501F8"
 				client     	@31
 				supplier   	@8
 				vertices   	(list Points
-				    (1773, 1166)
-				    (1666, 1307))
+				    (1755, 1250)
+				    (1656, 1407))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$23" @33
 				Parent_View 	@31
-				location   	(-195, 260)
+				location   	(-213, 344)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"580E658501FA"
 				client     	@31
 				supplier   	@9
 				vertices   	(list Points
-				    (1773, 1166)
-				    (1881, 1026))
+				    (1755, 1250)
+				    (1855, 1093))
 				line_style 	0)))))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"580E4AC003DD"
@@ -1345,7 +1416,7 @@
 		    max_height 	28350
 		    max_width  	21600
 		    origin_x   	0
-		    origin_y   	0
+		    origin_y   	338
 		    items      	(list diagram_item_list
 			(object Swimlane "" @55
 			    line_color 	3342489
@@ -3918,7 +3989,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	";C:\\Program Files (x86)\\Java\\jdk1.8.0_74\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_74\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_74\\lib\\tools.jar")
+			value      	";D:\\jdk874\\jre\\lib\\rt.jar;D:\\jdk874\\lib\\dt.jar;D:\\jdk874\\lib\\tools.jar")
 		    (object Attribute
 			tool       	"Java"
 			name       	"ReferenceClasspath"
